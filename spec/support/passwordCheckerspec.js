@@ -13,5 +13,9 @@ describe('Password Validation', () => {
     it('should return true if password is not less than 8 characters', () => {
         expect(validatePassword('12345678!')).toBe(true);
     });
+    it('should return false if doesnt contain a special character', () => {
+        expect(validatePassword('Valid123')).toBe(false);
+
+    });
     
 });
