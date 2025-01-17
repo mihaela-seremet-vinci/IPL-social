@@ -1,6 +1,6 @@
 class Main { 
     isValid(num) {
-        return true; 
+        return num.length >=8; 
     }
 }
 
