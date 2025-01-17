@@ -1,6 +1,9 @@
 class Main {
+  static MIN_PASSWORD_LENGTH = 8;
+  static FORBIDDEN_WORD = 'ipl';
+
   isValid(password) {
-    if (password.length < 8) {
+    if (password.length < Main.MIN_PASSWORD_LENGTH) {
       return false;
     }
 
@@ -14,7 +17,7 @@ class Main {
       return false;
     }
 
-    if (password.toLowerCase().includes("ipl")) {
+    if (password.toLowerCase().includes(Main.FORBIDDEN_WORD)) {
         return false;
     }
 
