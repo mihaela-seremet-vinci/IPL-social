@@ -19,7 +19,17 @@ describe('Password Validation', () => {
     });
     it('should return true if contains a special character', () => {
         expect(validatePassword('Valid12&')).toBe(true);
-
     });
+
+    it('should return false if doesnt contain number', () => {
+        expect(validatePassword('Validaaa')).toBe(false);
+    });
+
+    it('should return true if contains number', () => {
+        expect(validatePassword('Valid1aa&')).toBe(true);
+    });
+
+    
+   
     
 });

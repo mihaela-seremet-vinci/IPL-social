@@ -1,21 +1,21 @@
-
-
-class Main { 
-    isValid(num) {
-        return (
-            num.length >= 8 &&
-            (num.includes('&') ||
-                num.includes('$') ||
-                num.includes('!') ||
-                num.includes('è') ||
-                num.includes('§') ||
-                num.includes('à') ||
-                num.includes('_'))
-        );
-
+class Main {
+  isValid(num) {
+    if (num.length < 8) {
+      return false;
     }
-    
-      
+
+    var specialCharacter = /[!@#$%^&*(),.?":{}|<>]/;
+    if (!specialCharacter.test(num)) {
+      return false;
+    }
+
+    var number = /[0-9]/;
+    if (!number.test(num)) {
+      return false;
+    }
+
+    return true;
+  }
 }
 
 module.exports = Main;
