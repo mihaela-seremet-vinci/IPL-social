@@ -17,5 +17,9 @@ describe('Password Validation', () => {
         expect(validatePassword('Valid123')).toBe(false);
 
     });
+    it('should return true if contains a special character', () => {
+        expect(validatePassword('Valid12&')).toBe(true);
+
+    });
     
 });
