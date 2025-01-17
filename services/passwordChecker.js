@@ -14,6 +14,11 @@ class Main {
       return false;
     }
 
+    // Vérifier que le mot de passe ne contient pas "IPL" (insensible à la casse)
+    if (num.toLowerCase().includes("ipl")) {
+        return false;
+    }
+
     return true;
   }
 }

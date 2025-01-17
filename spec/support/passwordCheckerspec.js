@@ -29,6 +29,10 @@ describe('Password Validation', () => {
         expect(validatePassword('Valid1aa&')).toBe(true);
     });
 
+    it('should return false if contains IPL', () => {
+        expect(validatePassword('ValidIPL1!')).toBe(false);
+    });
+
     
    
     
