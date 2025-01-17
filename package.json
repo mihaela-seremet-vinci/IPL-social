@@ -1,4 +1,10 @@
 {
+  "name": "IPL-social",
+  "lockfileVersion": 3,
+  "requires": true,
+  "scripts": {
+    "test": "jasmine"
+  },
   "devDependencies": {
     "jasmine": "^5.5.0"
   }
