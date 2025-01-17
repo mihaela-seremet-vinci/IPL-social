@@ -6,7 +6,7 @@
 
 
 ## URL du Projet
-(https://github.com/votre_nom_utilisateur/IPL-social)
+(https://github.com/mihaela-seremet-vinci/IPL-social)
 
 ## Description
 Ce projet contient une pipeline CI configurée avec GitHub Actions pour exécuter les tests en utilisant le TDD (Test Driven Development).  
