@@ -1,21 +1,20 @@
 class Main {
-  isValid(num) {
-    if (num.length < 8) {
+  isValid(password) {
+    if (password.length < 8) {
       return false;
     }
 
-    var specialCharacter = /[!@#$%^&*(),.?":{}|<>]/;
-    if (!specialCharacter.test(num)) {
+    var hasSpecialCharacter = /[!@#$%^&*(),.?":{}|<>]/;
+    if (!hasSpecialCharacter.test(password)) {
       return false;
     }
 
-    var number = /[0-9]/;
-    if (!number.test(num)) {
+    var hasNumber = /[0-9]/;
+    if (!hasNumber.test(password)) {
       return false;
     }
 
-    // Vérifier que le mot de passe ne contient pas "IPL" (insensible à la casse)
-    if (num.toLowerCase().includes("ipl")) {
+    if (password.toLowerCase().includes("ipl")) {
         return false;
     }
 
