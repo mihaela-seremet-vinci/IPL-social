@@ -2,8 +2,8 @@
 
 ## Auteur
 - **Nom :** SEREMET Mihaela 
-- **Prénom :** mihaela.seremet@student.vinci.be
-- **Email Vinci :** (https://github.com/mihaela-seremet-vinci/IPL-social)
+- **Email Vinci :**  mihaela.seremet@student.vinci.be
+
 
 ## URL du Projet
 (https://github.com/votre_nom_utilisateur/IPL-social)
